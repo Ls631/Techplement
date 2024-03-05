@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Selling Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<style>
+    body{
+        background-color: rgb(21, 16, 83);
+        color:#fff;
+        font-family: "poppins", sans-serif;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        width: 100%;
+        background-color: rgb(72, 72, 241); 
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+    nav ul li a{
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+    nav ul li a:hover{
+        color:rgb(153, 153, 226);
+        font-size:1rem;
+    }
+    .buttons{
+        padding: 50px 0;
+    }
+    .btn{
+        padding: 3px;
+        background:rgb(153, 153, 226);
+        color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        justify-content: space-around;
+    }
+    .firstSection{
+        display:flex;
+        justify-content: space-around;
+        text-align: center;
+        margin: 100px 0;
+    }
+    .firstSection > div {
+        width: 30%;
+    }
+    .leftSection{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .blue{
+        color: yellow;
+    }
+    #element{
+        color: rgb(170, 107, 228);
+    }
+    .text-aligned{
+        text-align: left;
+        font-size: 1rem;
+    }
+    .rightSection img{
+        width:120%;    
+    }
+    .left{
+        font-size:1.5rem;
+    }
+    .left:hover{ 
+        color:rgb(4, 4, 158);
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      main {
+        padding: 20px;
+      }
+    .course-card{
+        border:1px solid #ccc;
+        padding:10px;
+        margin-bottom:10px;
+    }
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    input[type="text"], input[type="password"], input[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    input[type="submit"]{
+        background-color: #4CAF50;
+        color: beige;
+        font-size: 15px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        
+    }
+    input[type="submit"]:hover{
+        background-color: #45a049;
+    }
+    footer{
+        background-color:#0c0e1a;
+        color:#fff;
+        height:100%;
+        width:100%;
+        margin:5px;
+    }
+    .footer-container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+    }
+    .footer-section{
+        flex: 1 1 30%;
+        margin-bottom: 20px;
+    }
+    .footer-section h3{
+        color:#fff;
+        font-size: 18px;
+        margin-bottom:  10px;
+    }
+    ul{
+        list-style-type:none;
+        padding: 0;
+        margin:0;  
+    }
+    .ul:hover{
+        color:rgb(153, 153, 226);
+    }
+    .footer-section ul li{
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+    ul li a{
+        color:#fff;
+        text-decoration:none;
+        display:block;
+        margin-left: 10px;
+    }
+    .social-icons{
+        display:flex;
+        padding: 0;
+    }
+    .social-icons li{
+        margin-right : 10px;
+    }
+    .social-icons img{
+        width: 30px;
+        height: 30px;
+        justify-content: space-around;
+    }
+    .copyright {
+        text-align:center;
+    }
+    .footer-section h3{
+        background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+        background-clip: text;
+        color: transparent;
+        text-decoration: underline;
+    }
+    h2{
+        background: linear-gradient(to right, #13cccc 0%, #7d649c 100%);
+        background-clip: text;
+        color: transparent;
+    }
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color:rgba(255, 255, 255);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: aqua;
+    }
+    h3{
+        background: linear-gradient(to right, #30CFD0 0%, #090013 100%);
+        background-clip: text;
+        color: transparent;
+        margin-left: 8px;
+    }
+</style>
+<body>
+        <nav>
+            <div class="left">TECHPLEMENT TECH CLASSES</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Our Courses</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <div class="buttons">
+                <button class="btn">Login</button>
+                <button class="btn">Signup</button>
+            </div> 
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+            Hello, We are <span class="blue">"TECHPLEMENT"</span>
+            <div class="text-aligned">Techplement is a clean fullscreen education website, well suited for schools, universities, online courses, and other education-related websites. It comes with a beautiful and well-developed websites and web pages and blog that you can use as a standalone education blog.</div>
+            <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="Second.jpg" width="150%" alt="/>"
+            </div>
+        </section>
+        <br/>
+        <Course Listings>
+        <section id="course-listings">
+            <h2>Our Courses:-</h2>
+            <div class="course-card">
+                <h3>Course 1: Full Stack Web Development</h3>
+                <p>Full stack development is the process of designing, creating, testing, and deploying a complete web application from start to finish. It involves working with various technologies and tools, including front-end web development, back-end web development, and database development.</p>
+                <button onclick="location.href=course1.html">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Course 2: Data Science</h3>
+                <p>Learn the fundamentals of Data Science, data science is the study of data to extract meaningful insights for business. It is a multidisciplinary approach that combines principles and practices from the fields of mathematics, statistics, artificial intelligence, and computer engineering to analyze large amounts of data.</p>
+                <button onclick="location.href=course2.html">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <h3>Course 3: Artificial Intelligence</h3>
+                <p>Learn the fundamentals of artificial intelligence, Advance your career with this AI and Machine Learning course and master in-demand skills like ML, deep learning, NLP, computer vision, reinforcement learning, generative AI, prompt engineering, and ChatGPT among others.</p>
+                <button onclick="location.href=course3.html">Enroll Now</button>
+            </div>
+            </section>
+    </main>
+    <form action="/submit_registration" method="post">
+        <h2>Registration Form:-</h2>
+        <label for = "name">Name</label>
+        <input type="text" placeholder="First Name" id="name" name="name" required>
+        <br />
+        <label for = "sirname">Last Name</label>
+        <input type="text" placeholder="Last Name" id="sirname" name="sirname" required>
+        <br />
+        <label for="city">City</label>
+        <input type="text" placeholder="Name Of The City" id="city" name="city" required>
+        <br/>
+        <label for="email">E-mail</label>
+        <input type="email" placeholder="E-mail" id="email" name="email" required>
+        <br />
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="password" required>
+        <br/>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" placeholder="Confirm Password"  id="confirm-password" name="confirm-password" required>
+        <br/>
+        <input type="submit" value="Register">
+    </form>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Techplement's Online Courses Links:-</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Our Courses</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us:-</h3>
+                <p>Email:info@Techplement.com</p>
+                <p>Phone:+011-235-8965</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us On:-</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="facebook.png" width="10%" alt="Facebook"</a></li>
+                    <li><a href="#"><img src="twitter.png" width="10%" alt="Twitter"</a></li>
+                    <li><a href="#"><img src="instagram.png" width="10%" alt="Instagram"</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2024 Techplement Online Course Selling Website | All Rights Reserved</div>
+    </footer>
+    <script src="Script.js"></script>
+</body>
+</html>
+
+
+
+
+
